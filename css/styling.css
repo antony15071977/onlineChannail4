@@ -1,0 +1,1356 @@
+/*html {
+    background-repeat: no-repeat;
+    background-position: 50% 579px;
+    background-size: 1024px;
+}
+  
+@media ( min-width: 1024px ) {
+    html {
+    background-image: url( "../img/ready_channeil_land.jpg" );
+   }
+}
+@media ( max-width: 320px ) {
+    html {
+    background-image: url( "../img/320_chan.jpg" );
+    background-size: 320px;
+    background-position: 50% 1056px;
+    }
+ }
+
+ body {
+    opacity: .5;
+  }*/
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a:hover, a:focus, a:active {
+	text-decoration: none;
+}
+a, div {
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+img {
+	display: block;
+}
+*, ::after, ::before {
+    box-sizing: initial;
+}
+body {
+	font-family: RobotoRegular, sans-serif, Arial;
+	font-weight: 400;
+	color: #464646;
+	line-height: initial;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ @font-face {
+  font-family: 'RobotoLight';
+  font-style: normal;
+  src: url('../fonts/Roboto_Lt.woff') format('woff'), url('../fonts/Roboto_Lt.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  font-style: normal;
+  src: url('../fonts/Roboto_Reg.woff') format('woff'), url('../fonts/Roboto_Reg.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'RobotoBold';
+  font-style: normal;
+  src: url('../fonts/Roboto_Bol.woff') format('woff'), url('../fonts/Roboto_Bol.woff2') format('woff2');
+}
+
+.main-wrapper {
+	max-width: 1024px;
+	background-color: white;
+	box-shadow: 0 8px 28px -10px rgba(0,0,0,.2);
+	margin: 0 auto;
+}
+.top-box {
+	background: url(../img/fon1.png) top right no-repeat;
+	padding: 50px;
+	background-size: contain;
+	padding-bottom: 8px;
+}
+.top-box_logo {
+	max-width: 591px;
+	width: 100%;
+	padding-left: 14px;
+    margin-top: -9px;
+    margin-bottom: 87px;
+}
+.top-box_h1 {
+	font-family: RobotoLight, sans-serif, Arial;
+	font-weight: 400;
+	color: #717171;
+	max-width: 571px;
+	font-size: 41px;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: right;
+    margin-bottom: 28px;
+}
+.top-box_h2 {
+	font-family: RobotoRegular, sans-serif, Arial;
+	font-weight: 400;
+	color: #aaaaaa;
+	max-width: 571px;
+	font-size: 15px;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 134px;
+}
+.top-box_hr {
+	width: 65%;
+    margin-left: auto;
+    border: 0;
+    border-top: 2px solid #ffea6e;
+    margin-right: -50px;
+    margin-top: -14px;
+    margin-bottom: 67px;
+}
+.top-box_p {
+	font-family: RobotoLight, sans-serif, Arial;
+	font-weight: 400;
+	color: #b98a42;
+	max-width: 100%;
+	font-size: 12px;
+    line-height: 26px;
+    text-align: center;   
+}
+.top-box_p:last-child {
+	margin-bottom: 28px;
+}
+.course-block {
+	padding-right: 50px;
+	padding-left: 50px;
+}
+.course-block_head {
+	font-family: RobotoRegular, sans-serif, Arial;
+	font-weight: 400;
+	color: #464646;
+	max-width: 100%;
+	font-size: 124px;
+    text-transform: uppercase;
+    line-height: 109px;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.course-block_img {
+	margin: 0 auto;
+    margin-top: -64px;
+    max-width: 680px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.course-block_link {
+	color: white;
+	padding: 23px 73px;
+	background-color: #cfd0d0;
+	display: block;
+	margin-top: -51px;
+	margin-left: auto;
+	font-family: RobotoRegular, sans-serif, Arial;
+	font-weight: 400;
+	width: fit-content;
+	font-size: 32px;
+	text-decoration: none;
+	position: relative;
+    z-index: 2;
+}
+.course-block_link:hover {
+	background-color: #ffea6e;
+	color: black;
+}
+.course-block_name {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 20px;
+    color: #ffea6e;
+    text-transform: uppercase;
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+.course-block_text {
+	font-family: RobotoRegular, sans-serif, Arial;
+	font-weight: 400;
+	color: #4f4f4f;
+	max-width: 64%;
+	font-size: 12px;
+    line-height: 21px;
+    text-align: left;
+}
+.course-block_text:last-child  {
+	/*margin-bottom: 21px;*/
+	margin-bottom: 91px;
+}
+.support-block {
+	background: url(../img/support.png) white no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.support-block_heading {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 120px;
+    color: #b98a42;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+    text-align: left;
+}
+.support-block_text {
+	font-family: RobotoBold, sans-serif, Arial;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #4f4f4f;
+    margin-bottom: 302px;
+    text-align: left;
+    max-width: 54%;
+}
+.support-block_lent {
+	width: 100%;
+	height: 90px;
+	background-color: #f9f8fc;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+}
+.support-block_lessons {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 44px;
+    color: #464646;
+    text-transform: uppercase;
+}
+.support-block_lent + .top-box_p, .lessons-block_number, .support-block_text, .support-block_heading, .irina-block_triangle, .regalies-block, .pre-instrument-heading, .instrument, .pre-works_heading, .works-block, .reviews-block_heading, .reviews-block_slider-container, .reviews-block_control-container, .socials {
+	padding-right: 50px;
+    padding-left: 50px;
+}
+.lessons-block {
+	position: relative;
+}
+.lessons-block_link {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+.lessons-block_number {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 166px;
+    color: #ffea70;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+.lessons-block_lesson {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 86px;
+    color: #dedede;
+    text-transform: uppercase;
+    margin-left: 35px;
+    position: relative;
+    top: -22px;
+}
+.lessons-block-lent {
+	width: 100%;
+	background-color: #f2ecee;
+	height: 166px;
+	margin-top: -82px;
+}
+.lessons-block_img {
+	max-width: 864px;
+	width: 100%;
+	margin: -107px auto 0;
+    position: relative;
+    z-index: 2;
+}
+.lessons-block_background {
+	background-color: #f9f8fc;
+	position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 664px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -54px auto 0;
+}
+.lessons-block:hover .lessons-block_background {
+	background-color: #ffea6e;
+}
+.lessons-block:hover .lessons-block_name {
+	color: black;
+}
+.lessons-block_name {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 35px;
+    color: #464646;
+    text-align: center;
+}
+.lessons-block:nth-child(9) .lessons-block_img {
+	max-width: 630px;
+	margin: -107px auto 0;
+	cursor: pointer;
+}
+.lessons-block:nth-child(9) .lessons-block_background {
+	margin-top: -597px;
+}
+.irina-block_hr {
+	width: 81%;
+    margin-left: auto;
+    border: 0;
+    border-top: 2px solid #ffea6e;
+    margin-right: 0;
+    margin-top: -609px;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 2;
+}
+.irina-block_triangle {
+	max-width: 565px;
+    width: 100%;
+    margin-top: 320px;
+}
+.irina-block_img {
+	max-width: 510px;
+	max-height: 620px;
+	object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+}
+.irina-block .top-box_p {
+	font-size: 19px;
+}
+.irina-block .top-box_p:last-child {
+    margin-bottom: 67px;
+}
+.irina-block + .support-block_heading {
+	letter-spacing: -2px;
+	text-align: center;
+	line-height: 102px;
+	margin-bottom: 16px;
+}
+.regalies-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 117px;
+}
+.regalies-block_item {
+	width: 166px;
+    height: 233px;
+    object-fit: cover;
+    margin: 0 auto 4px;
+    border: 9px solid transparent;
+}
+.regalies-block_img {
+	width: 100%;
+	height: 100%;
+}
+.regalies-block_item:hover {
+	border: 9px solid #ffea72;
+}
+.pre-instrument {
+	background-color: #f9f8fc;
+	height: 290px;
+	width: 100%;
+	padding-top: 30px;
+    text-align: center;
+}
+.pre-instrument-heading {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 81px;
+    color: #b98a42;
+    margin-bottom: 42px;
+    letter-spacing: -1px;
+    position: relative;
+}
+.pre-instrument-info {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: #4f4f4f;
+    margin-bottom: 35px;
+    position: relative;
+    margin-top: -153px;
+    z-index: 2;
+    text-align: left;
+    padding-left: 20%;
+    padding-right: 6%;
+}
+.instrument {
+	/*min-height: 411px;*/
+	position: relative;
+}
+.instrument_img {
+	max-width: 580px;
+	width: 100%;
+}
+.instrument_name {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 44px;
+    color: #ffea6e;
+    text-align: right;    
+    position: absolute;
+    top: 53px;
+    right: 50px;
+}
+.instrument_price {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 42px;
+    color: #b98a42;
+    text-align: right;
+    margin-top: -10px;
+    position: absolute;
+    top: 88px;
+    right: 50px;
+}
+.show600 {
+	display: none;
+}
+.instrument_container .instrument:nth-child(3) .instrument_img, .instrument_container .instrument:nth-child(7) .instrument_img {
+	margin-left: auto;
+}
+.instrument_container .instrument:nth-child(3) .instrument_price {
+	right: 190px;
+}
+.instrument_container .instrument:nth-child(5) .instrument_name {
+	width: 55%;
+	top: 203px;
+}
+.instrument_container .instrument:nth-child(5) .instrument_price {
+	top: 284px;
+}
+.instrument_container .instrument:nth-child(7) .instrument_name, .instrument_container .instrument:nth-child(9) .instrument_name {
+	top: 166px;
+}
+.instrument_container .instrument:nth-child(7) .instrument_price {
+	right: 237px;
+}
+.instrument_container .instrument:nth-child(7) .instrument_price, .instrument_container .instrument:nth-child(9) .instrument_price {
+	top: 205px;
+}
+.pre-works .irina-block_triangle {
+	padding-left: 0;
+	margin-top: -130px;
+    max-width: 496px;
+}
+.pre-works_heading {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 96px;
+    color: #464646;
+    margin-bottom: 60px;
+}
+.pre-works .irina-block_hr {
+	margin-top: -521px;
+	margin-bottom: 0px;
+}
+.works-block {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+	justify-content: center;
+	width: calc(100% - 100px);
+	height: auto;
+	max-height: 1848px;
+	max-width: 924px;
+	margin-bottom: 117px;
+}
+.works-block_item {
+	justify-self: center;
+	align-self: center;
+	width: 100%;
+    height: 100%;
+}
+.works-block_item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.reviews-block {
+	background: url(../img/reviews.png) top right no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 721px;
+    margin-bottom: 0;
+}
+.reviews-block_heading {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 98px;
+    color: #b98a42;
+    text-align: right;
+}
+.reviews-block .irina-block_hr {
+	margin-top: 51px;
+    width: 62%;
+    margin-bottom: 31px;
+}
+.reviews-block_slider-container {
+	margin-top: -300px;
+}
+.carousel-item img {
+	max-width: 265px;
+	max-height: 565px;
+	object-fit: cover;
+}
+.carousel-caption_number {
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    font-size: 137px;
+    color: #fff;
+    transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+    z-index: 16;
+}
+.carousel-control-next-icon {
+    background-image: url(../img/arrow.png);    
+}
+.carousel-control-next:hover span {
+	background-image: url(../img/arrowYell.png);
+}
+.carousel-control-prev-icon {
+    background-image: url(../img/arrow2.png);    
+}
+.carousel-control-prev:hover span {
+	background-image: url(../img/arrow2Yell.png);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 25px;
+    height: 60px;
+    background-repeat: no-repeat; 
+    background-size: cover;    
+}
+.carousel-control-next, .carousel-control-prev {
+	position: static;
+	width: 40px;
+}
+.reviews-block_control-container {
+	display: flex;
+	justify-content: flex-end;
+}
+.carousel-indicators li {
+	background-image: url(../img/heartFull.png);
+	width: 43px;
+    height: 41px;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-color: transparent;
+}
+.carousel-indicators .active {
+	background-image: url(../img/heartEmpty.png);
+}
+.carousel-indicators {
+	position: absolute;
+    right: 0;
+    left: auto;
+    margin-right: auto;
+}
+.footer {
+	min-height: 800px;
+	width: 100%;
+	background-color: #d2d2d2;
+}  
+.footer_heading {
+	font-family: RobotoLight, sans-serif, Arial;
+	font-weight: 400;
+	color: #464646;
+	font-size: 53px;
+	margin-top: 0;
+	margin-bottom: -31px;
+	margin-left: 78px;
+	position: relative;
+    z-index: 2;
+    letter-spacing: 7px;
+}
+.footer iframe {
+	max-width: 723px;
+	max-height: 460px;
+	width: 100%;
+	height: 460px;
+	padding-top: 58px;
+	margin-bottom: 102px;
+}
+.footer_agree-container {
+	margin-right: 50px;
+    margin-left: auto;
+    margin-bottom: 50px;
+    width: 400px;
+}
+.footer_agree {
+	display: block;
+    text-align: left;    
+    font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    color: #464646!important;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 27px;
+    width: fit-content;
+    border-bottom: 1px solid #464646;
+}
+/*__________MODAL___________*/
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 50px 35px;
+  width:auto;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+.mfp-wrap {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.modal--overflow {
+	overflow: hidden;
+}
+/* Styles for dialog window 
+Fade-zoom animation for first dialog
+   */
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out; 
+	-moz-transition: all 0.2s ease-in-out; 
+	-o-transition: all 0.2s ease-in-out; 
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8); 
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: scale(1); 
+	-moz-transform: scale(1); 
+	-ms-transform: scale(1); 
+	-o-transform: scale(1); 
+	transform: scale(1); 
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	-webkit-transform: scale(0.8); 
+	-moz-transform: scale(0.8); 
+	-ms-transform: scale(0.8); 
+	-o-transform: scale(0.8); 
+	transform: scale(0.8);
+	opacity: 0;
+}
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+/*** Fade-move animation for second dialog
+ */
+/* at start */
+ .my-mfp-slide-bottom .zoom-anim-dialog {
+ 	opacity: 0;
+ 	-webkit-transition: all 0.2s ease-out;
+ 	-moz-transition: all 0.2s ease-out;
+ 	-o-transition: all 0.2s ease-out;
+ 	transition: all 0.2s ease-out;
+ 	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+ 	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+ 	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+ 	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+ 	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+ }
+ /* animate in */
+ .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+ 	opacity: 1;
+ 	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+ 	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+ 	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+ 	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+ 	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+ }
+ /* animate out */
+ .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+ 	opacity: 0;
+ 	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+ 	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+ 	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+ 	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+ 	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+ }
+ /* Dark overlay, start state */
+ .my-mfp-slide-bottom.mfp-bg {
+ 	opacity: 0;
+ 	-webkit-transition: opacity 0.3s ease-out; 
+ 	-moz-transition: opacity 0.3s ease-out; 
+ 	-o-transition: opacity 0.3s ease-out; 
+ 	transition: opacity 0.3s ease-out;
+ }
+ /* animate in */
+ .my-mfp-slide-bottom.mfp-ready.mfp-bg {
+ 	opacity: 0.8;
+ }
+ /* animate out */
+ .my-mfp-slide-bottom.mfp-removing.mfp-bg {
+ 	opacity: 0;
+ }
+.modal__content h3 {
+	color: #ffea6e;
+	font-size: 28px;
+	line-height: 34px;
+	margin-bottom: 10px;
+}
+.modal__content h3 + p {
+	margin-bottom: 10px;
+}
+.modal__content p {
+	font-size: 16px;
+	line-height: 24px;
+}
+.modal__content li {
+	font-size: 16px;
+	line-height: 24px;
+}
+.modal__content ul {
+	padding-left: 25px;
+}
+.mfp-close-btn-in .mfp-close {
+    color: #ffea6e;
+    padding: 0;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    transition: 0.6s;
+    margin: 10px;
+}
+.mfp-close-btn-in .mfp-close:hover {
+    background: rgba(0,0,0,0.4);
+}
+.mfp-close:active {
+    top: 0;
+}
+.modal_button {	
+	display: block;
+	font-family: RobotoRegular, sans-serif, Arial;
+    font-weight: 400;
+    color: #fff!important;
+    font-size: 29px;
+    line-height: 29px;
+    padding: 20px 65px;
+    margin-top: 15px;
+    margin-left: auto;
+    width: fit-content;
+    background-color: #ffea6e;
+}
+.modal__content hr {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: -35px;
+}
+/*---------------------*/
+.iconsoc {
+    width: 40px;
+    display: block;
+    margin-right: 12px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.socials {
+	display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;    
+}
+.btn-socials {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn-link-tel {
+	background: #2196F3!important;
+}
+.btn-link-whatsapp {
+	background: #55cd6c!important;
+}
+.btn-link-inst {
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.btn-link {
+    color: #464646!important;;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+
+
+
+ @media (max-width:1010px) {
+	.pre-instrument-info {
+margin-top: -80px;
+    }
+}
+@media (max-width:918px) {
+	.course-block_name {
+margin-top: 14px;
+   }
+   .course-block_link {
+margin-right: 14px;
+	}
+	.support-block_heading {
+ font-size: 100px;
+    }
+    .irina-block_triangle {
+    	padding-right: 0;
+    	padding-left: 0;
+    }
+    .pre-instrument-info {
+padding-left: 50px;
+	    padding-right: 50px;
+	}
+}
+@media (max-width:870px) {
+	.instrument_img {
+ max-width: 460px;
+	}
+	.instrument_name {
+top: 0px;
+font-size: 35px;
+line-height: 36px;
+    }
+    .instrument_price {
+top: 35px;
+font-size: 35px;
+    }
+    .instrument_container .instrument:nth-child(3) .instrument_price {
+	    right: 166px;
+	}
+    .instrument_container .instrument:nth-child(5) .instrument_name {
+		top: 148px;
+	}
+	.instrument_container .instrument:nth-child(5) .instrument_price {
+		top: 219px;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_price {
+		right: 204px;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_name, .instrument_container .instrument:nth-child(9) .instrument_name {
+		top: 131px;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_price, .instrument_container .instrument:nth-child(9) .instrument_price {
+		top: 165px;
+	}
+	.pre-works_heading {
+	    font-size: 68px;
+    }
+    .reviews-block .irina-block_hr {
+	    width: 57%;
+    }
+}
+@media (max-width:768px) {
+	.top-box {
+	    background: url(../img/fon1.png) 100% 6% no-repeat;
+	    padding: 14px;
+	    background-size: 68%;
+    }
+	.top-box_logo {
+width: 77%;
+    	min-width: 216px;
+    	margin-top: 5px;
+    	margin-bottom: 80px;
+    }
+    .top-box_hr {
+	    width: 71%;
+	    margin-left: -14px;
+	    margin-right: auto;
+	    margin-top: 8px;
+	    margin-bottom: 67px;
+	}
+	.course-block_text {
+max-width: 100%;
+    }
+    .support-block_heading {
+ font-size: 80px;
+    }
+    .reviews-block .irina-block_hr {
+	    width: 46%;
+	    margin-top: 23px;
+margin-bottom: 0;
+	}
+	.reviews-block_slider-container {
+	    margin-top: -188px;
+	}
+	.reviews-block {
+background-size: 120%;
+    }
+    .carousel-item img {
+    	max-width: 214px;
+    }
+    .footer_heading {
+		font-size: 42px;
+margin-bottom: -32px;
+letter-spacing: 5px;
+	}
+}
+@media (max-width:700px) {
+	.instrument_img {
+ max-width: 300px;
+	}
+	.instrument_name {
+font-size: 28px;
+line-height: 28px;
+    }
+    .instrument_price {
+font-size: 28px;
+    }
+    .instrument_container .instrument:nth-child(3) .instrument_price {
+	    right: 142px;
+	}
+	.instrument_container .instrument:nth-child(5) .instrument_name {
+		top: 91px;
+	}
+	.instrument_container .instrument:nth-child(5) .instrument_price {
+		top: 148px;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_name, .instrument_container .instrument:nth-child(9) .instrument_name {
+		top: 78px;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_price, .instrument_container .instrument:nth-child(9) .instrument_price {
+		top: 106px;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_price {
+		right: 176px;
+	}
+	.carousel-indicators li {
+		width: 25px;
+    	height: 23px;
+	}
+}
+@media (max-width:600px) {
+	.top-box_logo {
+margin-bottom: 10px;
+	}
+	.top-box_h1 {
+max-width: 215px;
+    	font-size: 15px;
+line-height: 18px;
+	    text-align: left;
+	    margin-bottom: 74px;
+	}
+	.top-box_h2 {
+font-size: 10px;
+line-height: 13px;
+	    text-align: left;
+	    padding-left: 0;
+	}
+	.top-box_p {
+		font-size: 8px;
+	    line-height: 13px;
+	    text-align: left;   
+	}
+	.top-box_p:last-child {
+	    margin-bottom: 9px;
+	}
+	.top-box_hr {
+	    margin-bottom: 33px;
+	}
+	.course-block_head {
+font-size: 62px;
+line-height: 55px;
+    }
+    .course-block_img {
+margin-top: -33px;
+    }
+    .course-block {
+	    padding-right: 0;
+	    padding-left: 0;
+	}
+	.course-block_link {
+padding: 12px 38px;
+margin-top: -6px;
+font-size: 16px;
+    }
+    .course-block:nth-child(2) img {
+    	height: 130px;
+    }
+    .course-block:nth-child(3) img {
+    	height: 200px;
+    }
+    .course-block:nth-child(4) img {
+    	height: 224px;
+    }
+    .course-block_name {
+font-size: 10px;
+margin-top: 7px;
+    	margin-bottom: 0;
+    }
+	.course-block_text {
+font-size: 7px;
+    	line-height: 10px;
+    }
+	.support-block_heading {
+ font-size: 47px;
+ text-align: center;
+ margin-bottom: 5px;
+    }
+    .support-block_text {
+	    font-size: 11px;
+    	line-height: 13px;
+margin-bottom: 5px;
+    }
+	.support-block_lessons {
+		font-size: 17px;
+	}
+	.course-block_name, .course-block_text, .support-block_lent + .top-box_p, .support-block_text,  .support-block_heading, .lessons-block_number, .irina-block_img, .pre-instrument-heading, .pre-instrument-info, .instrument_name, .pre-works_heading, .works-block, .reviews-block_heading, .reviews-block_slider-container, .reviews-block_control-container, .socials {
+		padding-right: 14px;
+	    padding-left: 14px;
+	}
+	.course-block_text:last-child {
+	    margin-bottom: 21px;
+	}
+	.support-block_lent {
+		height: 35px;
+	    margin-bottom: 14px;
+	}
+	.lessons-block_number {
+	font-size: 61px;
+	margin-bottom: -28px;
+	z-index: 3;
+    }
+    .lessons-block_lesson {
+	font-size: 32px;
+	margin-left: 14px;
+	top: -8px;
+	}
+	.lessons-block_name {
+		font-size: 12px;
+    	line-height: 14px;
+    	background-color: #f9f8fc;
+		margin: -10px auto 0;
+    	padding: 11px;
+    	min-width: 230px;
+    }
+    .lessons-block_background {
+		height: 0;
+		margin: 0;
+	}
+	.lessons-block-lent {
+		height: 20px;
+	    margin-top: 0;
+	}
+	.lessons-block_img {
+		margin: 0 auto 0;
+    }
+    .lessons-block {
+	    margin-bottom: 17px;
+	}
+	.lessons-block:nth-child(9) .lessons-block_img {
+		margin: -35px auto 0;
+		max-width: 238px;
+	}	
+	.lessons-block:nth-child(9) .lessons-block_background {
+		margin-top: 0;
+	}
+	.lessons-block:nth-child(9) .lessons-block_name {
+		margin-top: -429px;
+	}
+	.lessons-block:nth-child(9) .lessons-block-lent {
+		height: 64px;
+	}
+	.irina-block .top-box_p {
+		font-size: 10px;
+		line-height: 14px;
+		text-align: center;
+	}
+	.irina-block_img {
+    	max-width: 270px;
+    }.irina-block_triangle {
+	    max-width: 220px;
+	    margin-top: -100px;
+	}
+	.irina-block_hr {
+margin-top: -232px;
+    	margin-bottom: 48px;
+    }
+    .irina-block_img {
+	    max-width: 270px;
+	    max-height: 316px;
+    }
+    .irina-block .support-block_lent {
+	    height: 45px;
+    	margin-bottom: 27px;
+	}
+	.irina-block .support-block_lessons {
+		font-size: 24px;
+	}
+	.irina-block .top-box_p {
+	    font-size: 10px;
+	    line-height: 14px; 
+	}
+	.irina-block .top-box_p:last-child {
+	    margin-bottom: 17px;
+	}
+	.irina-block + .support-block_heading {
+    	letter-spacing: 0;
+line-height: 40px;
+	    margin-bottom: 20px;
+	    font-size: 37px;
+	}
+	.regalies-block_item {
+	    min-width: calc(50vw - 28px);
+	    height: auto;
+	    border: 14px solid transparent;
+	    margin: auto;
+	}
+	.regalies-block {
+		padding-right: 0;
+    	padding-left: 0;
+    	flex-wrap: nowrap;
+    	overflow-x: auto;
+    	margin-bottom: 76px;
+	}
+	.regalies-block::-webkit-scrollbar {
+		display: none;
+	}
+	.regalies-block_item:hover {
+		border: 14px solid #ffea72;
+	}
+	.pre-instrument-heading {
+	    font-size: 47px;
+margin-bottom: 0;
+	    text-align: left;
+	}
+	.pre-instrument-info {
+	    font-size: 12px;
+    	line-height: 22px;
+margin-bottom: 11px;
+margin-top: -120px;
+    }
+    .pre-instrument {
+height: 234px;
+padding-top: 1px;
+	}
+	.instrument_img {
+ max-width: 100%;
+ height: auto;
+    }
+	.instrument {
+    	min-height: fit-content;
+    	padding-right: 0;
+    	padding-left: 0;
+    }
+    .instrument_name {
+font-size: 20px;
+line-height: 30px;
+text-align: left;
+    	position: static;
+    }
+    .instrument_price {
+font-size: 34px;
+margin-top: 0;
+right: 14px;
+top: 47px;
+    }
+    .show600 {
+		display: block;
+	}
+	.instrument_container .top-box_hr {
+		margin-bottom: 24px;
+		margin-top: 28px;
+		border-top: 1px solid #ffea6e;
+	}
+	.instrument_container .instrument:nth-child(3) .instrument_price {
+	    right: 14px;
+	}
+	.instrument_container .instrument:nth-child(5) .instrument_price {
+		top: 78px;
+	}
+	.instrument_container .instrument:nth-child(5) .instrument_name {
+		width: 75%;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_price {
+		right: 14px;
+	}
+	.instrument_container .instrument:nth-child(7) .instrument_price, .instrument_container .instrument:nth-child(9) .instrument_price {
+		top: 47px;
+	}
+	.pre-works_heading {
+	    font-size: 41px;
+	    letter-spacing: -1px;
+	    margin-bottom: 6px;
+    }
+    .pre-works .irina-block_triangle {
+margin-top: -42px;
+	    max-width: 173px;
+	}
+	.pre-works .irina-block_hr {
+	    margin-top: -163px;
+	}
+	.works-block {
+grid-template-columns: 1fr 1fr;
+    	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+width: calc(100% - 28px);
+	    height: auto;
+	    max-height: initial;
+	    margin-bottom: 92px;
+    }
+    .reviews-block_heading {
+	    font-size: 71px;
+text-align: center;
+letter-spacing: -2px;
+padding-top: 156px;
+	}
+	.reviews-block {
+background-size: 170%;
+height: 721px;
+	    margin-bottom: 82px;
+	    margin-top: -157px;
+	}
+	.reviews-block .irina-block_hr {
+		margin-top: -103px;
+	    width: 78%;
+	    margin-bottom: 100px;
+	}
+	.carousel-caption_number {
+font-size: 100px;
+	    width: 40px;
+	    margin-right: 22px;
+	    margin-left: 9px;
+	    margin-top: 7px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+width: 26px;
+z-index: 16;
+	}
+	.carousel-indicators {
+top: -55px;
+	}
+	.reviews-block_slider-container {
+	    margin-top: -124px;
+	}
+	.footer_heading {
+		font-size: 24px;
+margin-bottom: -18px;
+letter-spacing: 3px;
+margin-left: 14px;
+	}
+	.footer_agree {
+	    font-size: 11px;
+	    line-height: 11px;
+	    margin-bottom: 17px;
+    }
+    .footer_agree-container {
+	    margin-right: auto;
+	    margin-left: auto;
+	    width: fit-content;
+	}
+	.footer iframe {
+		height: 260px;
+    	padding-top: 29px;
+	    margin-bottom: 34px;
+	}
+	.footer {
+    	min-height: 450px;
+   }
+   .modal__content h3 {
+		font-size: 22px;
+		line-height: 27px;
+		margin-bottom: 8px;
+	}
+	.modal__content h3 + p {
+		margin-bottom: 8px;
+	}
+	.modal__content p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.modal__content li {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.white-popup {
+        padding: 50px 14px;
+    }
+    .modal_button {	
+	    font-size: 25px;
+	    line-height: 26px;
+	    padding: 18px 60px;
+	}
+	.modal__content hr {
+		margin-right: -14px;
+		width: 100%;
+	}
+}
+@media (max-width:446px) {
+	.socials {
+        justify-content: start;
+    }
+}
+@media (max-width:424px) {
+	.reviews-block_control-container {
+		display: none;
+	}
+	.reviews-block_slider-container {
+	    margin-top: 0px;
+	}
+	.reviews-block .irina-block_hr {
+		margin-bottom: 136px;
+	}
+	.carousel-indicators {
+	    top: -49px;
+	}
+}
+@media (max-width:374px) {
+	.regalies-block_item {
+		min-width: calc(100vw - 28px);
+    }
+    .carousel-item img {
+    	max-width: 235px;
+    }
+}
+
