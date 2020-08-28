@@ -154,7 +154,7 @@ p {
 	font-weight: 400;
 	font-size: 19px;
 	line-height: 20px;
-	color: #796804;
+	color: #b98a42;
 	text-transform: uppercase;
 	margin-top: -15px;
 	margin-bottom: 5px;
@@ -1012,12 +1012,13 @@ Fade-zoom animation for first dialog
 	}
 	.course-block_name {
 		font-size: 11px;
+		line-height: 30px;
 		margin-top: 7px;
 		margin-bottom: 0;
 	}
 	.course-block_text {
 		font-size: 11px;
-		line-height: 14px;
+		line-height: 18px;
 	}
 	.support-block_heading {
 		font-size: 47px;
@@ -1026,7 +1027,7 @@ Fade-zoom animation for first dialog
 	}
 	.support-block_text {
 		font-size: 11px;
-		line-height: 14px;
+		line-height: 18px;
 		margin-bottom: 5px;
 	}
 	.support-block_lessons {
