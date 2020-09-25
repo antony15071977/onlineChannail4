@@ -390,7 +390,7 @@ p {
 	font-weight: 400;
 	font-size: 42px;
 	line-height: 44px;
-	color: #b98a42;
+	color: #f3d006;
 	text-align: right;
 	position: absolute;
 	top: 53px;
@@ -791,6 +791,9 @@ Fade-zoom animation for first dialog
 	padding-bottom: 50px;
 	flex-wrap: wrap;
 }
+.socials + .socials{
+	margin-top: 0;
+}
 .btn-socials {
 	display: flex!important;
 	flex-direction: row;
@@ -814,6 +817,22 @@ Fade-zoom animation for first dialog
 	margin-right: 0;
 	margin-left: 0;
 	margin-bottom: 5px;
+}
+.footer .footer_agree-container:first-child {
+	margin-bottom: 0;
+    padding-top: 50px;
+}
+.footer .footer_agree-container:first-child .footer_agree {
+	margin-bottom: 0;
+}
+.footer .pre-instrument-info {
+	line-height: 21px;
+    margin-bottom: 8px;
+    margin-top: 7px;
+    padding-left: 10%;
+}
+.footer .footer_heading {
+	margin-bottom: 22px;
 }
 @media (max-width:1010px) {
 	.pre-instrument-info {
@@ -957,6 +976,10 @@ Fade-zoom animation for first dialog
 	}
 }
 @media (max-width:600px) {
+	.footer .footer_agree-container:first-child {
+        padding-top: 30px;
+	    width: 300px;
+	}
 	.top-box_logo {
 		margin-bottom: 10px;
 	}
@@ -1316,6 +1339,9 @@ Fade-zoom animation for first dialog
 @media (max-width:446px) {
 	.socials {
 		justify-content: start;
+	}
+	.socials + .socials{
+		justify-content: space-around;
 	}
 }
 @media (max-width:424px) {
