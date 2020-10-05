@@ -1,6 +1,6 @@
 <?php
 // хешМД5 для ссылки КУПИТЬ
-// MerchantLogin:OutSum:InvId:Пароль#1:sph_item
+// MerchantLogin:OutSum:InvId:Пароль#1:sph_item=
 $mrh_pass2 = "f14aO6f8ehirw3iTTRgq";
 // чтение параметров
 $out_summ = $_REQUEST["OutSum"];
@@ -10,11 +10,10 @@ $crc = $_REQUEST["SignatureValue"];
 $crc = strtoupper($crc);
 $my_crc = strtoupper(md5("$out_summ:$inv_id:$mrh_pass2:shp_item=$shp_item"));
 //проверка секретного ключа
-if ($my_crc !=$crc)
-{
-  echo "bad sign\n";
-  exit();
-}
+if ($my_crc !=$crc) {
+      echo "bad sign\n";
+      exit();
+    }
 //массив ссылок на продажу
 $array_links = [
     1 => array("Курс «Синусный слайсинг крючковыми ножницами» 
@@ -48,7 +47,6 @@ $array_links = [
 if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POST и переданы данные
     $order_number = $_POST["shp_item"];
     $link = $array_links[$order_number] [0];
-
         //Надо добавить проверку на сумму платежа
         //если оплата правильная, можно отсылать письмо с ссылкой
     $summ = $array_links[$order_number] [1];
