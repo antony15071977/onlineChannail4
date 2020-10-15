@@ -14,34 +14,18 @@ if ($my_crc !=$crc) {
       echo "bad sign\n";
       exit();
     }
+
 //массив ссылок на продажу
 $array_links = [
-    1 => array("Курс «Синусный слайсинг крючковыми ножницами» 
-        1 урок -
-        https://www.youtube.com/watch?v=4tgV6v-vMAM&t=833s
-        2 урок –
-        https://www.youtube.com/watch?v=49cgw4OT_4M&t=462s 
-        3 урок –
-        https://www.youtube.com/watch?v=tSo1-lTcqCI&t=1s
-        ", 6999),
-    2 => array("Курс «Кутикульный слайсинг с Titanium Blade»
-        1 урок - 
-        https://www.youtube.com/watch?v=7_qigl8AYnM&t=2s
-        2 урок - 
-        https://www.youtube.com/watch?v=kiqCVz6_Ggw&t=2s
-        3 урок - 
-        https://www.youtube.com/watch?v=7MCuNBSViUQ&t=2s
-        ", 7999),
-    3 => array("Урок «Мокасиновая стопа»
-        https://www.youtube.com/watch?v=9h-yXRdkhU0&t=3s", 8500),
-    4 => array("Урок «Анатомическая лопатка»
-        https://www.youtube.com/watch?v=t5vfFtSeYfQ&t=651s", 2499),
-    5 => array("Урок «Скоростное снятие»
-        https://www.youtube.com/watch?v=kiqCVz6_Ggw&t=2s", 1399),
-    6 => array("Урок «Скоростной подпил»
-        https://www.youtube.com/watch?v=7MCuNBSViUQ&t=2s", 999),    
-    7 => array("Урок «Anderвстык 1:0»
-        https://www.youtube.com/watch?v=D6xzL-Taom0&t=228s", 1499),
+    1 => array("Курс «Основы слайсинга»", 23000),
+    2 => array("Курс «Основы слайсинга» + педикюр «Мокасиновая стопа 1.0»", 26000),
+    3 => array("Курс МАНИКЮР: «1 ФОРМА АНАТОМИЧЕСКОЙ ФРЕЗЫ»", 25000),
+    4 => array("Курс ПЕДИКЮР «МОКАСИНОВАЯ СТОПА 2.0»", 16000),
+    5 => array("Курс «АНАТОМИЧЕСКОЕ КОМБИ + ИДЕАЛЬНЫЙ ФРЕНЧ»", 10000),
+    6 => array("Курс «КЛАССИЧЕСКОЕ НАРАЩИВАНИЕ РЕСНИЦ, ОСНОВЫ И БАЗОВЫЕ ПРАВИЛА»", 8900),
+    7 => array("Курс «ОБЪЕМНОЕ НАРАЩИВАНИЕ РЕСНИЦ, ОСНОВЫ И БАЗОВЫЕ ПРАВИЛА»", 8900),
+    8 => array("Курс КОЛОРИСТИКИ. «СЛОЖНЫЕ ТЕХНИКИ ОКРАШИВАНИЯ»", 12500),
+    9 => array("Курс «BROW ПЕРФЕКЦИОНИСТ»", 14999),
 ];
 
 if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POST и переданы данные
@@ -55,24 +39,34 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
             //Теперь давайте настроим куда отправляем и откуда
             $to_email = $_POST["EMail"]; // Куда отправляем
             $sender_email = '<CHANNAIL4.ONLINE@CHANNAIL4.COM>'; // От кого отправляем
-            $title = "Ваш курс"; 
+            $title = "Поздравляем с приобретением курса от Channail4!"; 
+            $title2 = "У Вас купили новый курс"; 
 
             //Сообщение, которое приходит на почту со всеми нужными нам данными:
 
             $mes = "
             Поздравляю!
-            Только что на ваш Email пришло письмо с доступом к урокам на учебной платформе Channail4. Приступайте к изучению материалов прямо сейчас!\n
+            Только что Вы приобрели доступ к урокам на учебной платформе Channail4.\n
+            Свяжитесь с нашим администратором для записи на приобретенный Вами $link.\n
             -------------------------------\n
-            Ваша ссылка на  \n
-            $link \n 
-
+            
             Если Вас интересует более подробная информация по нашим курсам, пожалуйста, свяжитесь с нами!\n
             channail4school@yandex.ru
             ";
+            $mes2 = "
+            Поздравляю!
+            Только что за $paid рублей у Вас приобрели доступ к урокам на учебной платформе Channail4.\n
+            Свяжитесь с Вашим покупателем с помощью этой электронной почты $to_email для записи на приобретенный им $link.\n
+            -------------------------------\n          
+            
+            ";
+            // $to_email2 = 'channail4school@yandex.ru';
+            $to_email2 = 'i.avraamy2@gmail.com';
 
             //Всё, теперь можно отправлять письмо на почту
 
             $send = mail ($to_email,$title,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$sender_email");
+            $send2 = mail ($to_email2,$title2,$mes2,"Content-type:text/plain; charset = utf-8\r\nFrom:$sender_email");
             // признак успешно проведенной операции
             echo "OK$inv_id\n";
             
