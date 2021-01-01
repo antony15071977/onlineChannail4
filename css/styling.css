@@ -285,12 +285,12 @@ p {
 	color: #464646;
 	text-align: center;
 }
-.lessons-block:nth-child(9) .lessons-block_img {
+.lessons-block:nth-child(10) .lessons-block_img {
 	max-width: 630px;
 	margin: -107px auto 0;
 	cursor: pointer;
 }
-.lessons-block:nth-child(9) .lessons-block_background {
+.lessons-block:nth-child(10) .lessons-block_background {
 	margin-top: -597px;
 }
 .irina-block_hr {
