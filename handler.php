@@ -52,7 +52,7 @@ if(!empty($_POST["OutSum"]) && !empty($_POST["EMail"]) ){ // если был POS
     if ($paid >= $summ) {
             //Теперь давайте настроим куда отправляем и откуда
             $to_email = $_POST["EMail"]; // Куда отправляем
-            $sender_email = '<CHANNAIL4.ONLINE@CHANNAIL4.COM>'; // От кого отправляем
+            $sender_email = '<CHANNAIL4.ONLINE@CHANNAIL4.RU>'; // От кого отправляем
             $title = "Поздравляем с бронированием курса от Channail4!"; 
             $title2 = "У Вас новая бронь на курс";
             $title3 = "Поздравляем с полной оплатой курса от Channail4!"; 
